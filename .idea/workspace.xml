@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="21d5452d-c5cf-49c6-af48-2d5d796aa431" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/question6.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/model/Commande.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/model/Commande.php" afterDir="false" />
-    </list>
+    <list default="true" id="b08dda5c-070c-4010-a5c6-0562d938b096" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
