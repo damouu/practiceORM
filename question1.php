@@ -20,4 +20,5 @@ foreach ($uniq as $dede){
     echo $dede->nom_proprietaire," ",
     $dede->mail_proprietaire," ",
    "montant du cumul est"," ",$dede->cumul . PHP_EOL;
+    //here is from dede branch
 }
