@@ -1,13 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="63de89bc-e94b-48ac-9254-3a3d7e5acd50" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/question5.php" afterDir="false" />
+    <list default="true" id="21d5452d-c5cf-49c6-af48-2d5d796aa431" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/question6.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-<<<<<<< HEAD
-      <change beforePath="$PROJECT_DIR$/question1.php" beforeDir="false" afterPath="$PROJECT_DIR$/question1.php" afterDir="false" />
-=======
->>>>>>> dede
+      <change beforePath="$PROJECT_DIR$/src/app/model/Commande.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/model/Commande.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
