@@ -21,4 +21,5 @@ foreach ($uniq as $dede){
     $dede->mail_proprietaire," ",
    "montant du cumul est"," ",$dede->cumul . PHP_EOL;
     // here is from master branch
+    // modif for git commit --amend
 }
