@@ -1,6 +1,6 @@
 <?php
-require_once 'src/mf/utils/ClassLoader.php';
 require_once 'vendor/autoload.php';
+require_once 'src/mf/utils/ClassLoader.php';
 use \mf\utils\ClassLoader as Loader;
 use app\model\Commande as commande;
 
