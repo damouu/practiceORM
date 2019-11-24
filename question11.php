@@ -14,11 +14,11 @@ $db->addConnection($config);
 $db->setAsGlobal();
 $db->bootEloquent();
 
-$item_commande = item_commande::where("commande_id","=","000b2a0b-d055-4499-9c1b-84441a254a36");
+// affiche toutes les items et toutes les commandes contenant l'item en question , requete un peu long a afficher
+$item_commande = item_commande::select();
 $uniq = $item_commande->get();
 foreach ($uniq as $dede){
-    echo "la commande"," ",$dede->commande_id," ","contient comme item :";
-    echo $dede->infoItem," ","en quantite"," ",$dede->quantite.PHP_EOL;
+    echo $dede->infoItem.PHP_EOL;
+    echo $dede->infoCommande.PHP_EOL;
 }
 
-// here is from dede branch
