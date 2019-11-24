@@ -7,12 +7,7 @@ namespace app\model;
         protected $primaryKey = 'item_id';
         public $timestamps = false;
 
-
-        public function currentBorrows() {
-            return $this->hasMany('\app\model\Document', 'id_membre');
-        }
-
-        public function allBorrows() {
-            return $this->hasMany('\app\model\Emprunt', 'id_membre');
+        public function infoCommandeItem() {
+            return $this->hasMany('\app\model\Item', 'id');
         }
 }
