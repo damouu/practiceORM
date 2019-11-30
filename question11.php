@@ -2,7 +2,7 @@
 require_once 'vendor/autoload.php';
 require_once 'src/mf/utils/ClassLoader.php';
 use \mf\utils\ClassLoader as Loader;
-use app\model\Item_commande as item_commande;
+use app\model\Item as item;
 
 $loader = new Loader("src");
 $loader->register();
@@ -14,11 +14,11 @@ $db->addConnection($config);
 $db->setAsGlobal();
 $db->bootEloquent();
 
-// affiche toutes les items et toutes les commandes contenant l'item en question , requete un peu long a afficher
-$item_commande = item_commande::select();
-$uniq = $item_commande->get();
-foreach ($uniq as $dede){
-    echo $dede->infoItem.PHP_EOL;
-    echo $dede->infoCommande.PHP_EOL;
-}
 
+$item = item::where("id","=","1")
+   ->with("commandes")
+   ->first();
+    echo $item->libelle," ",$item->description," ",$item->tarif.PHP_EOL;
+    foreach ($item->commandes()->get() as $commande){
+         echo $commande->nom_client;
+}

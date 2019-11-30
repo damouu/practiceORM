@@ -1,13 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="73e70d65-6a71-4513-82c8-6a4587b16788" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/question11.php" afterDir="false" />
+    <list default="true" id="b08dda5c-070c-4010-a5c6-0562d938b096" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/TD2-ORM.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/TD2-ORM.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/question1.php" beforeDir="false" afterPath="$PROJECT_DIR$/question1.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/question10.php" beforeDir="false" afterPath="$PROJECT_DIR$/question10.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/model/Item_commande.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/model/Item_commande.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/question11.php" beforeDir="false" afterPath="$PROJECT_DIR$/question11.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/question2.php" beforeDir="false" afterPath="$PROJECT_DIR$/question2.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/question3.php" beforeDir="false" afterPath="$PROJECT_DIR$/question3.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/question6.php" beforeDir="false" afterPath="$PROJECT_DIR$/question6.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/question7.php" beforeDir="false" afterPath="$PROJECT_DIR$/question7.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/question8.php" beforeDir="false" afterPath="$PROJECT_DIR$/question8.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/question9.php" beforeDir="false" afterPath="$PROJECT_DIR$/question9.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/model/Commande.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/model/Commande.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/model/Item.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/model/Item.php" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -51,10 +59,20 @@
         <item name="commande@localhost" type="feb32156:DbDataSourceImpl" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="commande: schema" type="76f4a085:MysqlImplModel$Schema" />
-        <item name="item_commande: table" type="285a2a93:MysqlImplModel$Table" />
+        <item name="carte: table" type="285a2a93:MysqlImplModel$Table" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="commande@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="commande: schema" type="76f4a085:MysqlImplModel$Schema" />
+        <item name="commande: table" type="285a2a93:MysqlImplModel$Table" />
       </path>
     </expand>
     <select />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="TD2-ORM" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -77,6 +95,11 @@
   </component>
   <component name="ProjectId" id="1Tpa3YkI0idub9NunyIlo2tfPlS" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
@@ -91,42 +114,32 @@
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
-  </component>
   <component name="ServiceViewManager">
-    <option name="allServicesViewState">
-      <serviceView>
-        <option name="contentProportion" value="0.2189702" />
-        <treeState>
-          <expand>
-            <path>
-              <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@dd22ad8d" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-            </path>
-            <path>
-              <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@dd22ad8d" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceNode@55a9c7ab" type="9fbbdea:ServiceModel$ServiceNode" />
-            </path>
-            <path>
-              <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@dd22ad8d" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceNode@10ea9033" type="9fbbdea:ServiceModel$ServiceNode" />
-            </path>
-          </expand>
-          <select />
-        </treeState>
-      </serviceView>
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <option name="contentProportion" value="0.21138212" />
+          <treeState>
+            <expand>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="root:commande@localhost" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              </path>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="root:commande@localhost" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+                <item name="com.intellij.database.console.session.MessageBusSession@29f37802" type="9fbbdea:ServiceModel$ServiceNode" />
+              </path>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="root:commande@localhost" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+                <item name="com.intellij.database.console.session.MessageBusSession@5285c232" type="9fbbdea:ServiceModel$ServiceNode" />
+              </path>
+            </expand>
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
     </option>
   </component>
   <component name="SvnConfiguration">
@@ -134,7 +147,7 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="73e70d65-6a71-4513-82c8-6a4587b16788" name="Default Changelist" comment="" />
+      <changelist id="b08dda5c-070c-4010-a5c6-0562d938b096" name="Default Changelist" comment="" />
       <created>1574159291873</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -146,6 +159,10 @@
       <workItem from="1574354669289" duration="280000" />
       <workItem from="1574618316910" duration="4690000" />
       <workItem from="1574624905525" duration="3107000" />
+      <workItem from="1574796986389" duration="106000" />
+      <workItem from="1574844169564" duration="6359000" />
+      <workItem from="1574884647878" duration="4634000" />
+      <workItem from="1575111460375" duration="12382000" />
     </task>
     <servers />
   </component>
@@ -164,5 +181,31 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state width="1454" height="364" key="GridCell.Tab.0.bottom" timestamp="1575125150468">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state width="1454" height="364" key="GridCell.Tab.0.bottom/0.27.1920.1053@0.27.1920.1053" timestamp="1575125150468" />
+    <state width="1454" height="364" key="GridCell.Tab.0.center" timestamp="1575125150466">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state width="1454" height="364" key="GridCell.Tab.0.center/0.27.1920.1053@0.27.1920.1053" timestamp="1575125150466" />
+    <state width="1454" height="364" key="GridCell.Tab.0.left" timestamp="1575125150465">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state width="1454" height="364" key="GridCell.Tab.0.left/0.27.1920.1053@0.27.1920.1053" timestamp="1575125150465" />
+    <state width="1454" height="364" key="GridCell.Tab.0.right" timestamp="1575125150467">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state width="1454" height="364" key="GridCell.Tab.0.right/0.27.1920.1053@0.27.1920.1053" timestamp="1575125150467" />
+    <state x="609" y="269" width="700" height="530" key="recent.locations.popup" timestamp="1575119066333">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state x="609" y="269" width="700" height="530" key="recent.locations.popup/0.27.1920.1053@0.27.1920.1053" timestamp="1575119066333" />
+    <state x="624" y="252" key="run.anything.popup" timestamp="1575116831411">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state x="624" y="252" key="run.anything.popup/0.27.1920.1053@0.27.1920.1053" timestamp="1575116831411" />
   </component>
 </project>

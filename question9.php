@@ -14,36 +14,43 @@ $db->addConnection($config);
 $db->setAsGlobal();
 $db->bootEloquent();
 
-$commande = commande::find(5);
-$commande->id = 5;
-$commande->created_at ="2019-10-10 16:00:00";
-$commande->updated_at ="2019-10-10 16:11:11";
-$commande->date_livraison ="2019-10-11 09:00:00";
-$commande->montant = 5;
-$commande->etat = 0;
-$commande->nom_client = "Kory Goyette";
-$commande->carte_id = 10;
-$commande->save();
 
-$commande2 = commande::find(2);
-$commande2->id = 2;
-$commande2->created_at ="2019-10-10 16:00:00";
-$commande2->updated_at ="2019-10-10 16:11:11";
-$commande2->date_livraison ="2019-10-11 09:00:00";
-$commande2->montant = 10;
-$commande2->etat = 1;
-$commande2->nom_client = "Kory Goyette";
-$commande2->carte_id = 10;
-$commande2->save();
+$commande = commande::updateOrCreate(
+    ['id' => 777],
+    ['id' => 777,
+    'created_at'  => "2019-10-10 16:00:00",
+     "updated_at" => "2019-10-10 16:00:00",
+     "date_livraison" => "2019-10-10 16:00:00",
+        "montant" => 5,
+        "etat" => 0,
+        "nom_client" => "Kory Goyette",
+        "carte_id" => 10 ]
+);
 
-$commande3 =  commande::find(3);
-$commande3->id = 3;
-$commande3->created_at ="2019-10-10 16:00:00";
-$commande3->updated_at ="2019-10-10 16:11:11";
-$commande3->date_livraison ="2019-10-11 09:00:00";
-$commande3->montant = 15;
-$commande3->etat = 2;
-$commande3->nom_client = "Reymundo Daugherty";
-$commande3->carte_id = 11;
-$commande3->save();
+
+$commande2 = commande::updateOrCreate(
+    ['id' => 888],
+    ['id' => 888,
+        'created_at'  => "2019-10-10 16:00:00",
+        "updated_at" => "2019-10-10 16:00:00",
+        "date_livraison" => "2019-10-10 16:00:00",
+        "montant" => 10,
+        "etat" => 1,
+        "nom_client" => "Kory Goyette",
+        "carte_id" => 10 ]
+);
+
+
+$commande3 = commande::updateOrCreate(
+    ['id' => 999],
+    ['id' => 999,
+        'created_at'  => "2019-10-10 16:00:00",
+        "updated_at" => "2019-10-10 16:00:00",
+        "date_livraison" => "2019-10-10 16:00:00",
+        "montant" => 15,
+        "etat" => 2,
+        "nom_client" => "Kory Goyette",
+        "carte_id" => 11 ]
+);
+
 echo "nouveau insert fait";

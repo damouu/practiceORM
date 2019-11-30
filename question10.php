@@ -14,11 +14,10 @@ $db->addConnection($config);
 $db->setAsGlobal();
 $db->bootEloquent();
 
-$item_commande = item_commande::where("commande_id","=","000b2a0b-d055-4499-9c1b-84441a254a36");
-$uniq = $item_commande->get();
-foreach ($uniq as $dede){
-    echo "la commande"," ",$dede->commande_id," ","contient comme item :";
-    echo $dede->infoItem," ","en quantite"," ",$dede->quantite.PHP_EOL;
+$item_commande = \app\model\Commande::where("id","=","000b2a0b-d055-4499-9c1b-84441a254a36")->with("infoCommandeItem")->first();
+print_r($item_commande);
+foreach ($item_commande as $dede){
+    echo "la commande"," ",$dede->id," ","contient comme item :";
+    echo $dede->libelle," ","en quantite"," ",$dede->quantite.PHP_EOL;
 }
-
 // here is from dede branch

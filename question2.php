@@ -14,12 +14,12 @@ $db->addConnection($config);
 $db->setAsGlobal();
 $db->bootEloquent();
 
-$carte_fidel = carte::select("nom_proprietaire","mail_proprietaire","cumul")
-                    ->orderBy("nom_proprietaire", "DESC");
-$uniq = $carte_fidel->get();
-foreach ($uniq as $dede){
-    echo $dede->nom_proprietaire," ",
-    $dede->mail_proprietaire," ",
-    "montant du cumul est"," ",$dede->cumul . PHP_EOL;
+$cartes_fidels = carte::select("nom_proprietaire","mail_proprietaire","cumul")
+                    ->orderBy("nom_proprietaire", "DESC")
+                    ->get();
+foreach ($cartes_fidels as $carte_fidel){
+    echo $carte_fidel->nom_proprietaire," ",
+    $carte_fidel->mail_proprietaire," ",
+    "montant du cumul est"," ",$carte_fidel->cumul . PHP_EOL;
     // here is from dede branch
 }

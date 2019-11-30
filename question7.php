@@ -14,11 +14,12 @@ $db->addConnection($config);
 $db->setAsGlobal();
 $db->bootEloquent();
 
-$carte = carte::where("cumul",">", "1000");
-$uniq = $carte->get();
-foreach ($uniq as $dede){
-    echo $dede->nom_proprietaire," ",$dede->id," ",$dede->cumul.PHP_EOL;
-    echo $dede->commandesCarte.PHP_EOL;
+$cartes_cummul_1000 = carte::where("cumul",">", "1000")->get();
+foreach ($cartes_cummul_1000 as $carte_cummul_1000) {
+    echo "la carte numero "," ", $carte_cummul_1000->id," ","contient un cumul de"," ",$carte_cummul_1000->cumul," "," et a passe les commandes :".PHP_EOL;
+    $commandesCarte = $carte_cummul_1000->commandesCarte()->get();
+    foreach ($commandesCarte as $commandeCarte){
+        echo "commande numero "," ",$commandeCarte->id," ","d'un montant de ",$commandeCarte->montant.PHP_EOL;
+    }
 }
 
-// here is from dede branch
