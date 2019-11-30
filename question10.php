@@ -2,7 +2,8 @@
 require_once 'vendor/autoload.php';
 require_once 'src/mf/utils/ClassLoader.php';
 use \mf\utils\ClassLoader as Loader;
-use app\model\Item_commande as item_commande;
+use app\model\Item as item;
+use app\model\Commande as commande;
 
 $loader = new Loader("src");
 $loader->register();
@@ -14,10 +15,6 @@ $db->addConnection($config);
 $db->setAsGlobal();
 $db->bootEloquent();
 
-$item_commande = \app\model\Commande::where("id","=","000b2a0b-d055-4499-9c1b-84441a254a36")->with("infoCommandeItem")->first();
-print_r($item_commande);
-foreach ($item_commande as $dede){
-    echo "la commande"," ",$dede->id," ","contient comme item :";
-    echo $dede->libelle," ","en quantite"," ",$dede->quantite.PHP_EOL;
-}
-// here is from dede branch
+$commande = commande::find('9e0bdcd5-ee6f-4907-a96d-b67b1cefc20c');
+$items = $commande->listItem()->get();
+echo $items;
