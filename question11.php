@@ -15,10 +15,11 @@ $db->setAsGlobal();
 $db->bootEloquent();
 
 
-$item = item::where("id","=","1")
-   ->with("commandes")
-   ->first();
-    echo $item->libelle," ",$item->description," ",$item->tarif.PHP_EOL;
-    foreach ($item->commandes()->get() as $commande){
-         echo $commande->nom_client;
+$items = item::all();
+foreach ($items as $item){
+    echo "l'item "," ",$item->libelle , " apparait dans les commandes : ",' '.PHP_EOL;
+    $commandes = $item->commandes()->get();
+    foreach ($commandes as $commande){
+        echo $commande->id;
+    }
 }
