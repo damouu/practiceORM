@@ -15,6 +15,8 @@ $db->addConnection($config);
 $db->setAsGlobal();
 $db->bootEloquent();
 
-$commande = commande::find('9e0bdcd5-ee6f-4907-a96d-b67b1cefc20c');
-$items = $commande->listItem()->get();
-echo $items;
+$commande = commande::find('000b2a0b-d055-4499-9c1b-84441a254a36');
+$items = $commande->lesItems()->where("commande_id","=","000b2a0b-d055-4499-9c1b-84441a254a36")->get();
+foreach ($items as $item){
+    echo $item->libelle;
+}

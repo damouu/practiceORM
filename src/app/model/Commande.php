@@ -16,7 +16,7 @@ class Commande extends \Illuminate\Database\Eloquent\Model {
         return $this->hasMany('\app\model\item', 'carte_id');
     }
 
-    public function listItem() {
-        return $this->belongsToMany('\app\model\Item', 'item_commande','commande_id','item_id');
+    public function lesItems() {
+        return $this->belongsToMany('\app\model\Item',"item_commande","commande_id","item_id");
     }
 }

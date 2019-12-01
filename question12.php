@@ -14,25 +14,7 @@ $db->addConnection($config);
 $db->setAsGlobal();
 $db->bootEloquent();
 
-
-$commande = commande::with("listItem")
-    ->where("nom_client","=","Aaron McGlynn")->get();
-foreach ($commande->listItem as $cd ){
-    print $cd->pivot->item_id;
-}
-die();
-
-
-
-
-
-
-$commandes = commande::where("nom_client","=","Aaron McGlynn")->get();
-foreach ($commandes as $commande){
-    echo "les commande de ", " ",$commande->nom_client," ","contient comme item :".PHP_EOL;
-    $items_commandes = $commande->listItem;
-    foreach ($items_commandes as $items_commande){
-        echo $items_commande->libelle.PHP_EOL;
-    }
-}
-
+$commande = commande::where('nom_client', '=', 'Aaron McGlynn')->first();
+echo "la premiere commande de "," ",$commande->nom_client," ","numero de la commande est"," ",$commande->id," ";
+$item = $commande->listItem()->first();
+echo "contient comme produit", " ",$item->libelle.PHP_EOL," ","et a ete commande en quantite "," ",$item->pivot->quantite.PHP_EOL;
