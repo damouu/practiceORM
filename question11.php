@@ -20,6 +20,6 @@ foreach ($items as $item){
     echo "l'item "," ",$item->libelle , " apparait dans les commandes : ",' '.PHP_EOL;
     $commandes = $item->commandes()->get();
     foreach ($commandes as $commande){
-        echo $commande->id;
+        echo $commande->id.PHP_EOL;
     }
 }

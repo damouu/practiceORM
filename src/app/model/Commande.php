@@ -19,4 +19,5 @@ class Commande extends \Illuminate\Database\Eloquent\Model {
     public function lesItems() {
         return $this->belongsToMany('\app\model\Item',"item_commande","commande_id","item_id");
     }
+
 }
