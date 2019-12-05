@@ -15,11 +15,20 @@ $db->addConnection($config);
 $db->setAsGlobal();
 $db->bootEloquent();
 
-$commande = commande::find(3);
-$commande->lesItems()->sync(["quantite"=>30]);
-die();
-$item_commande = new item_commande();
-$item_commande->item_id = 6;
-$item_commande->commande_id = $commande->id;
-$item_commande->quantite = 4;
-$commande->lesItems()->save($item_commande);
+
+$commande = commande::where("id","=","3")->first();
+$item_commande4 = new item_commande();
+$item_commande4->item_id = 4;
+$item_commande4->commande_id = $commande->id;
+$item_commande4->quantite = 3;
+//$commande->lesItems()->save($item_commande);
+
+$commande = commande::where("id","=","3")->first();
+$item_commande6 = new item_commande();
+$item_commande6->item_id = 6;
+$item_commande6->commande_id = $commande->id;
+$item_commande6->quantite = 4;
+//$commande->lesItems()->save($item_commande);
+
+$item_commande6 = item_commande::find(6);
+$commande->lesItems()->attach($item_commande6->item_id,["quantite"=> 19]);
