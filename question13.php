@@ -16,6 +16,8 @@ $db->setAsGlobal();
 $db->bootEloquent();
 
 $commande = commande::find(3);
+$commande->lesItems()->sync(["quantite"=>30]);
+die();
 $item_commande = new item_commande();
 $item_commande->item_id = 6;
 $item_commande->commande_id = $commande->id;
