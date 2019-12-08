@@ -18,8 +18,7 @@ $db->bootEloquent();
 $items = item::all();
 foreach ($items as $item){
     echo "l'item "," ",$item->libelle , " apparait dans les commandes : ",' '.PHP_EOL;
-    $commandes = $item->commandes()->get();
-    foreach ($commandes as $commande){
+    foreach ($item->commandes()->get() as $commande){
         echo $commande->id.PHP_EOL;
     }
 }

@@ -42,8 +42,8 @@ $commande2 = commande::updateOrCreate(
 
 
 $commande3 = commande::updateOrCreate(
-    ['id' => 999],
-    ['id' => 999,
+    ['id' => 3],
+    ['id' => 3,
         'created_at'  => "2019-10-10 16:00:00",
         "updated_at" => "2019-10-10 16:00:00",
         "date_livraison" => "2019-10-10 16:00:00",

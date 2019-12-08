@@ -17,4 +17,6 @@ $db->bootEloquent();
 $commandes = commande::whereHas("lesItems",function ($q){
     $q->where("item_commande.item_id","=",2);
 })->get();
-echo $commandes;
+foreach ($commandes as $commande){
+    echo $commande.PHP_EOL;
+}

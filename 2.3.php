@@ -18,8 +18,7 @@ $db->bootEloquent();
 $commandes = commande::where("carte_id","=","5")->take(5)->get();
 foreach ($commandes as $commande){
     echo "la commande numero "," ",$commande->id," ","a ete fait par la carte numero "," ",$commande->carte_id.PHP_EOL;
-    $infoscartes_commandes = $commande->infocarte()->get();
-    foreach ($infoscartes_commandes as $infocarte_commande) {
+    foreach ($commande->infocarte()->get() as $infocarte_commande) {
         echo "la carte numero "," ",$infocarte_commande->id," "," appartient a "," ",$infocarte_commande->nom_proprietaire," ","est contient un cummul de "," ",$infocarte_commande->cumul.PHP_EOL;
     }
 }

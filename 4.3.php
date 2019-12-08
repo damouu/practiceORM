@@ -18,5 +18,5 @@ $db->bootEloquent();
 $commande = commande::where("id","=","9f1c3241-958a-4d35-a8c9-19eef6a4fab3")->first();
 $items = $commande->lesItems()->where("item.tarif","<",5.0)->get();
 foreach ($items as $item){
-    echo $item->tarif.PHP_EOL;
+    echo $item->libelle," ","tarif"," ",$item->tarif.PHP_EOL;
 }
