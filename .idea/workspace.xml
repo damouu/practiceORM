@@ -2,16 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b08dda5c-070c-4010-a5c6-0562d938b096" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/6.0.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2.2.php" beforeDir="false" afterPath="$PROJECT_DIR$/2.2.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2.3.php" beforeDir="false" afterPath="$PROJECT_DIR$/2.3.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2.4-5.php" beforeDir="false" afterPath="$PROJECT_DIR$/2.4-5.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/3.1.php" beforeDir="false" afterPath="$PROJECT_DIR$/3.1.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/3.2.php" beforeDir="false" afterPath="$PROJECT_DIR$/3.2.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/3.4-5.php" beforeDir="false" afterPath="$PROJECT_DIR$/3.4-5.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/4.3.php" beforeDir="false" afterPath="$PROJECT_DIR$/4.3.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/4.6.php" beforeDir="false" afterPath="$PROJECT_DIR$/4.6.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/model/Item_commande.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/model/Item_commande.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/model/Item.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/model/Item.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,20 +45,6 @@
         <item name="commande@localhost" type="feb32156:DbDataSourceImpl" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="commande: schema" type="76f4a085:MysqlImplModel$Schema" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="commande@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="commande: schema" type="76f4a085:MysqlImplModel$Schema" />
-        <item name="carte: table" type="285a2a93:MysqlImplModel$Table" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="commande@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="commande: schema" type="76f4a085:MysqlImplModel$Schema" />
-        <item name="commande: table" type="285a2a93:MysqlImplModel$Table" />
       </path>
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
@@ -124,7 +105,17 @@
         <serviceView>
           <option name="contentProportion" value="0.21138212" />
           <treeState>
-            <expand />
+            <expand>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="root:commande@localhost" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              </path>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="root:commande@localhost" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+                <item name="com.intellij.database.console.session.MessageBusSession@2ac8f79b" type="9fbbdea:ServiceModel$ServiceNode" />
+              </path>
+            </expand>
             <select />
           </treeState>
         </serviceView>
@@ -172,6 +163,7 @@
       <workItem from="1575654199252" duration="1113000" />
       <workItem from="1575802321737" duration="1695000" />
       <workItem from="1575820837622" duration="2961000" />
+      <workItem from="1575832692899" duration="2690000" />
     </task>
     <servers />
   </component>
@@ -216,10 +208,14 @@
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
     <state width="1454" height="369" key="GridCell.Tab.0.right/0.27.1920.1053@0.27.1920.1053" timestamp="1575818298774" />
-    <state x="755" y="479" width="399" height="156" key="NewPhpFileDialog" timestamp="1575816094268">
+    <state x="755" y="479" width="399" height="156" key="NewPhpFileDialog" timestamp="1575835602225">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state x="755" y="479" width="399" height="156" key="NewPhpFileDialog/0.27.1920.1053@0.27.1920.1053" timestamp="1575816094268" />
+    <state x="755" y="479" width="399" height="156" key="NewPhpFileDialog/0.27.1920.1053@0.27.1920.1053" timestamp="1575835602225" />
+    <state x="672" y="193" width="566" height="727" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1575833218811">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state x="672" y="193" width="566" height="727" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/0.27.1920.1053@0.27.1920.1053" timestamp="1575833218811" />
     <state x="609" y="269" width="700" height="530" key="recent.locations.popup" timestamp="1575815475761">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>

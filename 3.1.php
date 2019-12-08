@@ -16,6 +16,6 @@ $db->setAsGlobal();
 $db->bootEloquent();
 
 $commande = commande::find('000b2a0b-d055-4499-9c1b-84441a254a36');
-foreach ($commande->lesItems()->get() as $item){
+foreach ($commande->lesItems()->withTrashed()->get() as $item){
     echo $item->libelle.PHP_EOL;
 }

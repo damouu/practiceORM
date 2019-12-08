@@ -14,10 +14,20 @@ $db->addConnection($config);
 $db->setAsGlobal();
 $db->bootEloquent();
 
-$items = item::withTrashed()->get();
-foreach ($items as $item){
-    echo "l'item "," ",$item->libelle , " apparait dans les commandes : ",' '.PHP_EOL;
-    foreach ($item->commandes()->get() as $commande){
-        echo $commande->id.PHP_EOL;
-    }
-}
+
+$item = new item();
+$item->id = 1234;
+$item->libelle = "sushi";
+$item->description = "sushi aux maguro";
+$item->tarif = 3;
+$item->deleted_at = null;
+$item->save();
+echo "ok";
+
+$sushi = item::find(1234);
+$sushi->delete();
+die();
+
+$item = item::onlyTrashed()->where("id","=",1234)->get();
+echo $item;
+die();
