@@ -13,6 +13,7 @@ class Item extends \Illuminate\Database\Eloquent\Model {
     }
 
         public function commandes() {
-        return $this->belongsToMany('\app\model\Commande', "item_commande","item_id","commande_id");
+        return $this->belongsToMany('\app\model\Commande', "item_commande","item_id","commande_id")
+            ->withPivot(['item_id','commande_id','quantite']);
     }
 }

@@ -31,4 +31,4 @@ $item_commande6->quantite = 4;
 //$commande->lesItems()->save($item_commande);
 
 $item_commande6 = item_commande::find(6);
-$commande->lesItems()->attach($item_commande6->item_id,["quantite"=> 19]);
+$commande->lesItems()->attach([2 =>["quantite"=> 3], 6 =>["quantite"=>4]]);
