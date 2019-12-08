@@ -2,28 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b08dda5c-070c-4010-a5c6-0562d938b096" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/4.8.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/question1.php" beforeDir="false" afterPath="$PROJECT_DIR$/1.1.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/question10.php" beforeDir="false" afterPath="$PROJECT_DIR$/3.1.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/question11.php" beforeDir="false" afterPath="$PROJECT_DIR$/3.2.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/question12.php" beforeDir="false" afterPath="$PROJECT_DIR$/3.3.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/question13.php" beforeDir="false" afterPath="$PROJECT_DIR$/3.4-5.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/question14.php" beforeDir="false" afterPath="$PROJECT_DIR$/4.1.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/question15.php" beforeDir="false" afterPath="$PROJECT_DIR$/4.2.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/question16.php" beforeDir="false" afterPath="$PROJECT_DIR$/4.3.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/question17.php" beforeDir="false" afterPath="$PROJECT_DIR$/4.4.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/question18.php" beforeDir="false" afterPath="$PROJECT_DIR$/4.5.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/question19.php" beforeDir="false" afterPath="$PROJECT_DIR$/4.6.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/question2.php" beforeDir="false" afterPath="$PROJECT_DIR$/1.2.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/question20.php" beforeDir="false" afterPath="$PROJECT_DIR$/4.7.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/question3.php" beforeDir="false" afterPath="$PROJECT_DIR$/1.3.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/question4.php" beforeDir="false" afterPath="$PROJECT_DIR$/1.4.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/question5.php" beforeDir="false" afterPath="$PROJECT_DIR$/1.5.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/question6.php" beforeDir="false" afterPath="$PROJECT_DIR$/2.1.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/question7.php" beforeDir="false" afterPath="$PROJECT_DIR$/2.2.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/question8.php" beforeDir="false" afterPath="$PROJECT_DIR$/2.3.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/question9.php" beforeDir="false" afterPath="$PROJECT_DIR$/2.4-5.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1.2.php" beforeDir="false" afterPath="$PROJECT_DIR$/1.2.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1.3.php" beforeDir="false" afterPath="$PROJECT_DIR$/1.3.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1.4.php" beforeDir="false" afterPath="$PROJECT_DIR$/1.4.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,20 +51,6 @@
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="commande: schema" type="76f4a085:MysqlImplModel$Schema" />
         <item name="carte: table" type="285a2a93:MysqlImplModel$Table" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="commande@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="commande: schema" type="76f4a085:MysqlImplModel$Schema" />
-        <item name="commande: table" type="285a2a93:MysqlImplModel$Table" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="commande@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="commande: schema" type="76f4a085:MysqlImplModel$Schema" />
-        <item name="item_commande: table" type="285a2a93:MysqlImplModel$Table" />
       </path>
     </expand>
     <select />

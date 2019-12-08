@@ -16,10 +16,8 @@ $db->setAsGlobal();
 $db->bootEloquent();
 
 try {
-    $carte_fidel = carte::where("nom_proprietaire", "like", "%Ariane%")->firstOrFail();
-    echo $carte_fidel;
+    $carte_fidel = carte::where("nom_proprietaire", "like", "%Ariane%")->orderBy("cumul", "ASC")->firstOrFail();
+    echo $carte_fidel.PHP_EOL;
 } catch (ModelNotFoundException $e) {
     echo "no existing card";
 }
-
-// here is from dede branch

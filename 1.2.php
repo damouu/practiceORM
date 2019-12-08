@@ -21,5 +21,4 @@ foreach ($cartes_fidels as $carte_fidel){
     echo $carte_fidel->nom_proprietaire," ",
     $carte_fidel->mail_proprietaire," ",
     "montant du cumul est"," ",$carte_fidel->cumul . PHP_EOL;
-    // here is from dede branch
 }

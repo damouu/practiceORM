@@ -16,9 +16,7 @@ $db->setAsGlobal();
 $db->bootEloquent();
     try {
         $carte_fidel = carte::where("id", "=", "7342")->firstOrFail();
-        echo $carte_fidel;
+        echo $carte_fidel.PHP_EOL;
 } catch (ModelNotFoundException $e) {
-        echo "cette carte n'existe pas";
+        echo "cette carte n'existe pas".PHP_EOL;
     }
-
-// here is from dede branch
