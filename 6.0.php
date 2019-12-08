@@ -26,7 +26,7 @@ echo "ok";
 
 $sushi = item::find(1234);
 $sushi->delete();
-die();
+
 
 $item = item::onlyTrashed()->where("id","=",1234)->get();
 echo $item;

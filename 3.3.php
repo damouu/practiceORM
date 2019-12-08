@@ -17,7 +17,7 @@ $db->bootEloquent();
 $commandes = commande::with("lesItems")->where("nom_client","=",'Aaron McGlynn')->get();
 foreach ($commandes as $commande){
     echo "la commande numero "," ",$commande->id," ","de monsieur",$commande->nom_client," ","contient comme produit :";
-        foreach ($commande->lesItems()->get() as $item){
+        foreach ($commande->lesItems()->withTrashed()->get() as $item){
             echo $item->libelle.PHP_EOL;
             echo $item->pivot->quantite.PHP_EOL;
     }
