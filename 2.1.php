@@ -16,7 +16,6 @@ $db->bootEloquent();
 
 $carte42 = carte::find("42");
 echo "la carte numero"," ",$carte42->id," ","appartient a "," ",$carte42->nom_proprietaire," ","et possede un cumul de "," ",$carte42->cumul," ","et a passe les commandes :".PHP_EOL;
-$commandes_carte42 = $carte42->commandesCarte()->get();
-foreach ($commandes_carte42 as $commande_carte42 ){
+foreach ($commandes_carte42 = $carte42->commandesCarte()->get() as $commande_carte42 ){
     echo "la commande numero", " ",$commande_carte42->id," ","d'un montant de "," ",$commande_carte42->montant.PHP_EOL;
 }

@@ -2,7 +2,6 @@
 require_once 'vendor/autoload.php';
 require_once 'src/mf/utils/ClassLoader.php';
 use \mf\utils\ClassLoader as Loader;
-use app\model\Item as item;
 use app\model\Commande as commande;
 
 $loader = new Loader("src");
@@ -15,8 +14,9 @@ $db->addConnection($config);
 $db->setAsGlobal();
 $db->bootEloquent();
 
-$commande = commande::find('000b2a0b-d055-4499-9c1b-84441a254a36');
-$items = $commande->lesItems()->where("commande_id","=","000b2a0b-d055-4499-9c1b-84441a254a36")->get();
+
+$commande = commande::where("id","=","9f1c3241-958a-4d35-a8c9-19eef6a4fab3")->first();
+$items = $commande->lesItems()->where("item.tarif","<",5.0)->get();
 foreach ($items as $item){
-    echo $item->libelle;
+    echo $item->tarif.PHP_EOL;
 }

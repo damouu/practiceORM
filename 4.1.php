@@ -2,7 +2,7 @@
 require_once 'vendor/autoload.php';
 require_once 'src/mf/utils/ClassLoader.php';
 use \mf\utils\ClassLoader as Loader;
-use app\model\Commande as commande;
+use app\model\Carte as carte;
 
 $loader = new Loader("src");
 $loader->register();
@@ -14,9 +14,8 @@ $db->addConnection($config);
 $db->setAsGlobal();
 $db->bootEloquent();
 
-
-$commande = commande::where("id","=","9f1c3241-958a-4d35-a8c9-19eef6a4fab3")->first();
-$items = $commande->lesItems()->where("tarif","<",5.0)->get();
-foreach ($items as $item){
-    echo $item->tarif.PHP_EOL;
+$carte = carte::where("mail_proprietaire","like","%Aaron.McGlynn%")->first();
+$commandes = $carte->commandesCarte()->where("commande.etat",">","0")->get();
+foreach ($commandes as $commande){
+    echo $commande.PHP_EOL;
 }

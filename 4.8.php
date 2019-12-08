@@ -14,11 +14,9 @@ $db->addConnection($config);
 $db->setAsGlobal();
 $db->bootEloquent();
 
-$commandes = commande::with("lesItems")->where("nom_client","=",'Aaron McGlynn')->get();
+$commandes = commande::has("cartes")->get();
+echo $commandes;
+die();
 foreach ($commandes as $commande){
-    echo "la commande numero "," ",$commande->id," ","de monsieur",$commande->nom_client," ","contient comme produit :";
-        foreach ($commande->lesItems() as $item){
-            echo $item->libelle.PHP_EOL;
-            echo $item->pivot->quantite.PHP_EOL;
-    }
+   echo $commande->lesItems()->wherePivot("quantite",">",3)->get();
 }

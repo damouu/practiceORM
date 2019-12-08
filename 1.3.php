@@ -15,7 +15,7 @@ $db->addConnection($config);
 $db->setAsGlobal();
 $db->bootEloquent();
     try {
-        $carte_fidel = carte::where("id", "=", "1")->firstOrFail();
+        $carte_fidel = carte::where("id", "=", "7342")->firstOrFail();
         echo $carte_fidel;
 } catch (ModelNotFoundException $e) {
         echo "cette carte n'existe pas";

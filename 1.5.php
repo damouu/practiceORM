@@ -23,4 +23,3 @@ $newcarte->created_at = "2019-10-10 16:05:59";
 $newcarte->updated_at = "2019-10-10 16:05:59";
 $newcarte->cumul = "2019";
 $newcarte->save();
-// here is from dede branch
