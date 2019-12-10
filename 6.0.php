@@ -30,4 +30,3 @@ $sushi->delete();
 
 $item = item::onlyTrashed()->where("id","=",1234)->get();
 echo $item;
-die();

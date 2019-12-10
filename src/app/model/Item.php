@@ -8,6 +8,8 @@ class Item extends \Illuminate\Database\Eloquent\Model {
     protected $table = 'item';
     protected $primaryKey = 'id';
     public $timestamps = false;
+    public $incrementing = false;
+    public $keyType = 'string';
     protected $dates = ['deleted_at'];
 
     public function infoCommandeItem() {

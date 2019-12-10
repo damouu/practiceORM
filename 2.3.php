@@ -15,7 +15,7 @@ $db->addConnection($config);
 $db->setAsGlobal();
 $db->bootEloquent();
 
-$commandes = commande::where("carte_id","=","5")->take(5)->get();
+$commandes = commande::where("carte_id","=","5")->get();
 foreach ($commandes as $commande){
     echo "la commande numero "," ",$commande->id," ","a ete fait par la carte numero "," ",$commande->carte_id.PHP_EOL;
     foreach ($commande->infocarte()->get() as $infocarte_commande) {
