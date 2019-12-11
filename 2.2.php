@@ -14,11 +14,7 @@ $db->addConnection($config);
 $db->setAsGlobal();
 $db->bootEloquent();
 
-$cartes_cummul_1000 = carte::where("cumul",">", "1000")->with("commandesCarte")->get();
-foreach ($cartes_cummul_1000 as $carte_cummul_1000) {
-    echo "la carte numero "," ", $carte_cummul_1000->id," ","contient un cumul de"," ",$carte_cummul_1000->cumul," "," et a passe les commandes :".PHP_EOL;
-    foreach ($carte_cummul_1000->commandesCarte()->get() as $commandeCarte){
-        echo "commande numero "," ",$commandeCarte->id," ","d'un montant de ",$commandeCarte->montant.PHP_EOL;
-    }
+$cartes = carte::where("cumul",">", "1000")->with("commandesCarte")->get();
+foreach ($cartes as $carte){
+    echo $carte.''.PHP_EOL;
 }
-

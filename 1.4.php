@@ -15,9 +15,7 @@ $db->addConnection($config);
 $db->setAsGlobal();
 $db->bootEloquent();
 
-try {
-    $carte_fidel = carte::where("nom_proprietaire", "like", "%Ariane%")->orderBy("cumul", "ASC")->firstOrFail();
-    echo $carte_fidel.PHP_EOL;
-} catch (ModelNotFoundException $e) {
-    echo "no existing card";
+$cartes = carte::where("nom_proprietaire", "like", "%Ariane%")->orderBy("cumul", "ASC")->get();
+foreach ($cartes  as $carte){
+    echo $carte.PHP_EOL;
 }

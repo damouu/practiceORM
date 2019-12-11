@@ -20,4 +20,3 @@ foreach ($carte_fidels as $carte_fidel){
     $carte_fidel->mail_proprietaire," ",
    "montant du cumul est"," ",$carte_fidel->cumul . PHP_EOL;
 }
-//test
