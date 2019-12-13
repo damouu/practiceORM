@@ -14,9 +14,7 @@ $db->addConnection($config);
 $db->setAsGlobal();
 $db->bootEloquent();
 
-$commandes = commande::has("cartes")->get();
-echo $commandes;
-die();
+$commandes = commande::has("infocarte")->get();
 foreach ($commandes as $commande){
-   echo $commande->lesItems()->wherePivot("quantite",">",3)->get();
+   echo $commande->cartes()->get();
 }
