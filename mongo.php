@@ -1,11 +1,13 @@
 <?php
 require_once 'vendor/autoload.php';
 
-$client = new MongoDB\Client("mongodb://localhost:27018");
+$client = new MongoDB\Client("mongodb://localhost:27017");
 $pokemons = $client->pokemon->pokemons;
 
-$results = $pokemons->find(['id' => '001']);
+$results = $pokemons->insertOne(['id' => '152', 'name' => 'pepe']);
 
-foreach ($results as $result) {
+$pepes = $pokemons->find(['id' => '152']);
+
+foreach ($pepes as $result) {
     echo $result['name'] . PHP_EOL;
 }
