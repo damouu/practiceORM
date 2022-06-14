@@ -1,0 +1,31 @@
+version: "3"
+
+networks:
+  pokemon_network:
+    driver: bridge
+
+services:
+  prism.app:
+    image: vieux/php7-fpm:alpine
+    environment:
+      - VHOST_HOSTNAME=pokemon.app.local
+      - VHOST_DOCROOT=/var/www/pokemon
+    ports:
+      - "10080:80"
+      - "10443:443"
+    volumes:
+      - ./:/var/www/TD2/
+    working_dir: /var/www/TD2
+    networks:
+      - pokemon_network
+    links:
+      - mongo_prism:db
+
+  mongo_prism:
+    image: mongo:latest
+    ports:
+      - "27018:27017"
+    networks:
+      - pokemon_network
+    volumes:
+      - ./conf:/mnt/
