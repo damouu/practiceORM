@@ -6,7 +6,10 @@ networks:
 
 services:
   prism.app:
-    image: vieux/php7-fpm:alpine
+    image: damou/php:8-apache-mongo-composer
+    container_name: php-API
+    #    build:
+    #      dockerfile: Dockerfile
     environment:
       - VHOST_HOSTNAME=pokemon.app.local
       - VHOST_DOCROOT=/var/www/pokemon
