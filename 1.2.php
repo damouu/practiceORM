@@ -1,8 +1,9 @@
 <?php
 require_once 'src/mf/utils/ClassLoader.php';
 require_once 'vendor/autoload.php';
-use \mf\utils\ClassLoader as Loader;
+
 use app\model\Carte as carte;
+use mf\utils\ClassLoader as Loader;
 
 $loader = new Loader("src");
 $loader->register();
@@ -14,11 +15,11 @@ $db->addConnection($config);
 $db->setAsGlobal();
 $db->bootEloquent();
 
-$cartes_fidels = carte::select("nom_proprietaire","mail_proprietaire","cumul")
-                    ->orderBy("nom_proprietaire", "DESC")
-                    ->get();
-foreach ($cartes_fidels as $carte_fidel){
-    echo $carte_fidel->nom_proprietaire," ",
-    $carte_fidel->mail_proprietaire," ",
-    "montant du cumul est"," ",$carte_fidel->cumul . PHP_EOL;
+$cartes_fidels = carte::select("nom_proprietaire", "mail_proprietaire", "cumul")
+    ->orderBy("nom_proprietaire", "DESC")
+    ->get();
+foreach ($cartes_fidels as $carte_fidel) {
+    echo $carte_fidel->nom_proprietaire, " ",
+    $carte_fidel->mail_proprietaire, " ",
+    "montant du cumul est", " ", $carte_fidel->cumul . PHP_EOL;
 }

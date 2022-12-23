@@ -11,11 +11,17 @@ $loader->register();
 $config = parse_ini_file('conf/config.ini');
 $db = new Illuminate\Database\Capsule\Manager();
 
-$db->addConnection($config);
-$db->setAsGlobal();
-$db->bootEloquent();
+try {
+    $db->addConnection($config);
+    $db->setAsGlobal();
+    $db->bootEloquent();
+} catch (Exception $exception) {
+    throw new $exception;
+}
+
 
 $carte_fidels = carte::select("nom_proprietaire", "mail_proprietaire", "cumul")->get();
+
 foreach ($carte_fidels as $carte_fidel) {
     echo $carte_fidel->nom_proprietaire, " ",
     $carte_fidel->mail_proprietaire, " ",

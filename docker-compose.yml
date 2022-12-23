@@ -6,15 +6,13 @@ networks:
 
 services:
   prism.app:
-    image: damou/php:8-apache-mongo-composer
+    image: damou/php:8-apache-mysql-composer
     container_name: php-API
-    #    build:
-    #      dockerfile: Dockerfile
     environment:
       - VHOST_HOSTNAME=pokemon.app.local
       - VHOST_DOCROOT=/var/www/pokemon
     ports:
-      - "10080:80"
+      - "8080:80"
       - "10443:443"
     volumes:
       - ./:/var/www/TD2/
@@ -22,12 +20,15 @@ services:
     networks:
       - pokemon_network
     links:
-      - mongo_prism:db
+      - mysql_prism:db
 
-  mongo_prism:
-    image: mongo:latest
+  mysql_prism:
+    container_name: MYSQL
+    image: damou/mysql:TD2-ORM
+    environment:
+      MYSQL_ROOT_PASSWORD: root
     ports:
-      - "27018:27017"
+      - "3307:3306"
     networks:
       - pokemon_network
     volumes:
