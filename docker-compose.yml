@@ -6,7 +6,7 @@ networks:
 
 services:
   prism.app:
-    image: damou/php:8-apache-mysql-composer
+    image: damou/php:8-apache-mysql-composer-nano
     container_name: php-API
     environment:
       - VHOST_HOSTNAME=pokemon.app.local
@@ -15,8 +15,8 @@ services:
       - "8080:80"
       - "10443:443"
     volumes:
-      - ./:/var/www/TD2/
-    working_dir: /var/www/TD2
+      - ./:/var/www/html/TD2
+    working_dir: /var/www/html/TD2
     networks:
       - pokemon_network
     links:
