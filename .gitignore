@@ -5,3 +5,4 @@ conf/
 .idea/workspace.xml
 seed.json
 Dockerfile
+.idea/php.xml
