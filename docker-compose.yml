@@ -26,6 +26,8 @@ services:
     container_name: MYSQL
     image: damou/mysql:TD2-ORM
     environment:
+      MYSQL_USER: dede
+      MYSQL_PASSWORD: dede
       MYSQL_ROOT_PASSWORD: root
     ports:
       - "3307:3306"
