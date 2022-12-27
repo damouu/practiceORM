@@ -1,16 +1,12 @@
 version: "3"
 
 networks:
-  pokemon_network:
+  lbs.net:
     driver: bridge
 
 services:
   prism.app:
     image: damou/php:8-apache-mysql-composer-nano
-    container_name: php-API
-    environment:
-      - VHOST_HOSTNAME=pokemon.app.local
-      - VHOST_DOCROOT=/var/www/pokemon
     ports:
       - "8080:80"
       - "10443:443"
@@ -18,12 +14,11 @@ services:
       - ./:/var/www/html/TD2
     working_dir: /var/www/html/TD2
     networks:
-      - pokemon_network
+      - lbs.net
     links:
-      - mysql_prism:db
+      - mysql.commande:commande
 
-  mysql_prism:
-    container_name: MYSQL
+  mysql.commande:
     image: damou/mysql:TD2-ORM
     environment:
       MYSQL_USER: dede
@@ -32,6 +27,6 @@ services:
     ports:
       - "3307:3306"
     networks:
-      - pokemon_network
+      - lbs.net
     volumes:
       - ./conf:/mnt/
