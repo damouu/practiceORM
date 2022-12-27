@@ -5,3 +5,4 @@ vendor/
 seed.json
 Dockerfile
 .idea/php.xml
+composer.lock
