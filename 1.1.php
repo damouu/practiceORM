@@ -19,8 +19,13 @@ $db->bootEloquent();
 
 $carte_fidels = carte::select("nom_proprietaire", "mail_proprietaire", "cumul")->limit(5)->get();
 
-foreach ($carte_fidels as $carte_fidel) {
-    echo $carte_fidel->nom_proprietaire, " ",
-    $carte_fidel->mail_proprietaire, " ",
-    "montant du cumul est", " ", $carte_fidel->cumul . PHP_EOL;
+function register($carte_fidels): void
+{
+    foreach ($carte_fidels as $carte_fidel) {
+        echo $carte_fidel->nom_proprietaire, " ",
+        $carte_fidel->mail_proprietaire, " ",
+        "montant du cumul est", " ", $carte_fidel->cumul . PHP_EOL;
+    }
 }
+
+register($carte_fidels);
