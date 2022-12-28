@@ -1,0 +1,54 @@
+1.1 -> carte : nom_proprietaire", "mail_proprietaire", "cumul limit 5
+
+1.2 -> carte : nom_proprietaire", "mail_proprietaire", "cumul" ->orderBy "nom_proprietaire", "DESC
+
+1.3 -> carte : id = 7342
+
+1.4 -> carte : nom_proprietaire like Ariane , order by cumul
+
+1.5 -> insert new carte
+
+2.1 -> get les commandes d'une carte passes par une carte specific (genre un id en pathParam)
+
+2.2 -> cartes vec un cummul sup a 1000 with commandesCarte <- ????
+
+2.3 ->  recuperer les commandes dune carte passe en param * ne pas afficher les details de la commonde, et ensuite les infos de la carte en question (apres on peut changer l'odre)
+
+2.4 | 5 -> insert 3 nouvelles commandes
+
+3.1 -> afficher les items d'une commande passer en param meme les withTrashed
+
+3.2 -> afficher les items withTrashed et sa commande
+
+3.3 -> les commandes de 'Aaron McGlynn' et ensuite les itemds de sa commande
+
+3.4|5 -> ajouter des itemds a des commandes existantes
+
+4.1 -> carte chercher par email "mail_proprietaire" et afficher les commandes de la carte en question  qui ne sont pas en etat 0
+
+4.2 -> les commandes qui sont dans un etat diff de 0 et montant > $20 (d'une carte ?????)
+
+4.3 -> command vec une id passer en param et lister les items de la commande qui ont un prix < $5
+
+4.4 -> les cartes qui plus de 8 commandes et loop pour chaque cartes lister la carte
+
+4.5 -> go checker jai rien faire
+
+4.6 ->  $commandes = commande::whereHas("lesItems",function ($q){
+            $q->where("item_commande.item_id","=",2);
+        })->get();
+        foreach ($commandes as $commande){
+            echo $commande.PHP_EOL;
+        }
+
+4.7 ->  $cartes = carte::whereHas("commandesCarte",function ($q){
+            $q->where("commande.montant",">",30.0);
+        })->get();
+        foreach ($cartes as $carte){
+            echo $carte.PHP_EOL;
+        }
+
+
+4.8 -> les infoCartes d'une commande // $commandes = commande::has("infocarte")->get();
+
+6.0 -> insert un new item - le delete (softDelete hein stp) - et afficher le delete item

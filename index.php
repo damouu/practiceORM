@@ -8,8 +8,8 @@ use Slim\Factory\AppFactory;
 
 $app = AppFactory::create();
 
-$app->get('/pepe', function (Request $request, Response $response, array $args) {
-    $response->getBody()->write("Hello, dede");
+$app->get('/', function (Request $request, Response $response, array $args) {
+    $response->getBody()->write("Damien je taime");
     return $response;
 });
 
