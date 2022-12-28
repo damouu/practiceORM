@@ -1,0 +1,6 @@
+docker-compose.yml
+conf/DBScript.sql
+conf/seed.json
+README.txt
+.gitignore
+Dockerfile
