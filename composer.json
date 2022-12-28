@@ -1,7 +1,9 @@
 {
   "require": {
     "illuminate/database": "^v9.44.0",
-    "php-di/php-di": "7.0.0-beta3"
+    "php-di/php-di": "7.0.0-beta3",
+    "slim/slim": "4.11.0",
+    "slim/psr7": "^1.6"
   },
   "require-dev": {
     "roave/security-advisories": "dev-latest"
