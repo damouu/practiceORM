@@ -6,12 +6,13 @@ networks:
 
 services:
   prism.app:
-    image: damou/php:8-apache-mysql-composer-nano
+    image: damou/php:8-apache-mysql-composer-nano-a2enmod
     ports:
       - "8080:80"
       - "10443:443"
     volumes:
       - ./:/var/www/html/TD2
+      - e
     working_dir: /var/www/html/TD2
     networks:
       - lbs.net
@@ -19,7 +20,7 @@ services:
       - mysql.commande:commande
 
   mysql.commande:
-    image: damou/mysql:TD2-ORM
+    image: damou/mysql:TD2-ORM-UPDATE
     environment:
       MYSQL_USER: dede
       MYSQL_PASSWORD: dede
