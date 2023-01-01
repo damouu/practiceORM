@@ -1,16 +1,17 @@
 {
   "require": {
     "illuminate/database": "^v9.44.0",
-    "php-di/php-di": "7.0.0-beta3",
     "slim/slim": "4.11.0",
-    "slim/psr7": "^1.6"
+    "slim/psr7": "^1.6",
+    "php-di/slim-bridge": "3.2.0",
+    "phpunit/phpunit": "9.5.27"
   },
   "require-dev": {
     "roave/security-advisories": "dev-latest"
   },
   "autoload": {
     "psr-4": {
-      "app\\": "src/"
+      "src\\": "src/"
     }
   }
 }
