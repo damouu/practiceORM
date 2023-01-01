@@ -1,8 +1,10 @@
 <?php
 
-namespace app\model;
+namespace src\model;
 
-class Commande extends \Illuminate\Database\Eloquent\Model
+use Illuminate\Database\Eloquent\Model;
+
+class Commande extends Model
 {
     protected $table = 'commande';
     protected $primaryKey = 'id';
