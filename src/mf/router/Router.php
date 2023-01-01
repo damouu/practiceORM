@@ -1,6 +1,6 @@
 <?php
 
-namespace mf\router;
+namespace src\mf\router;
 
 use mf\utils\HttpRequest as HttpRequest;
 
