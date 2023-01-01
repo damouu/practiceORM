@@ -2,20 +2,14 @@
 
 require 'vendor/autoload.php';
 
-use Psr\Http\Message\ResponseInterface as Response;
-use Psr\Http\Message\ServerRequestInterface as Request;
-use Slim\Factory\AppFactory;
+$db = new Illuminate\Database\Capsule\Manager();
+$config = parse_ini_file("./config/config.ini");
+$db->addConnection($config);
+$db->setAsGlobal();
+$db->bootEloquent();
 
-$app = AppFactory::create();
+$app = DI\Bridge\Slim\Bridge::create();
 
-$app->get('/', function (Request $request, Response $response, array $args) {
-    $response->getBody()->write("Damien je taime");
-    return $response;
-});
-
-$app->get('/dede', function (Request $request, Response $response, array $args) {
-    $response->getBody()->write("Hello, dede");
-    return $response;
-});
+$app->get('/carte', [src\action\CarteController::class, 'getCardsLimit']);
 
 $app->run();
