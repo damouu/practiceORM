@@ -1,21 +1,26 @@
 <?php
 
-namespace app\model;
+namespace src\model;
 
+use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Database\Eloquent\SoftDeletes;
 
-class Item extends \Illuminate\Database\Eloquent\Model
+class Item extends Model
 {
     use SoftDeletes;
 
     protected $table = 'item';
     protected $primaryKey = 'id';
+
     public $timestamps = false;
+
     public $incrementing = false;
     public $keyType = 'string';
+
     protected $dates = ['deleted_at'];
 
-    public function infoCommandeItem()
+    public function infoCommandeItem(): HasMany
     {
         return $this->hasMany('\app\model\Carte', 'carte_id');
     }
