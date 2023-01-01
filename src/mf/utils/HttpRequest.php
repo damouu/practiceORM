@@ -1,8 +1,10 @@
 <?php
-namespace mf\utils;
 
-class HttpRequest extends AbstractHttpRequest {
-    public function __construct() {
+namespace src\mf\utils;
+class HttpRequest extends AbstractHttpRequest
+{
+    public function __construct()
+    {
         $this->root = dirname($_SERVER['SCRIPT_NAME']);
 
         if (isset($_SERVER['PATH_INFO'])) {
