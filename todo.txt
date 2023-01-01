@@ -12,7 +12,7 @@
 
 2.2 -> cartes vec un cummul sup a 1000 with commandesCarte <- ????
 
-2.3 ->  recuperer les commandes dune carte passe en param * ne pas afficher les details de la commonde, et ensuite les infos de la carte en question (apres on peut changer l'odre)
+2.3 ->  recuperer les commandes dune carte passe en param * ne pas afficher les details de la commande, et ensuite les infos de la carte en question (apres on peut changer l'odre)
 
 2.4 | 5 -> insert 3 nouvelles commandes
 
