@@ -1,12 +1,16 @@
 <?php
 
-namespace app\model;
+namespace src\model;
 
-class Carte extends \Illuminate\Database\Eloquent\Model
+use Illuminate\Database\Eloquent\Model;
+
+class Carte extends Model
 {
     protected $table = 'carte';
     protected $primaryKey = 'id';
+
     public $timestamps = true;
+
     public $incrementing = false;
     public $keyType = 'string';
 
