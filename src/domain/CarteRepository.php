@@ -19,10 +19,9 @@ class CarteRepository
     }
 
 
-    public function findCardOfId(int $id): Carte
+    public function getCardById(int $id): Carte
     {
-//        return Carte::findOrFail($id);
-        return $this->cartes[$id];
+        return Carte::findOrFail($id);
     }
 
 
