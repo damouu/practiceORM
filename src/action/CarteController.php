@@ -19,7 +19,7 @@ class CarteController
     {
         $queryParams = $request->getQueryParams();
         if (!array_key_exists("limit", $queryParams)) {
-            $queryParams["limit"] = 1;
+            $queryParams["limit"] = 2;
         }
         $cards = $this->carteRepository->getCardsLimit($queryParams["limit"]);
         $cardsResponse = [];
