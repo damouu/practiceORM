@@ -36,4 +36,12 @@ class CarteController
         return $response->withHeader('Content-Type', 'application/json');
     }
 
+    public function getCartId(Request $request, Response $response): Response
+    {
+        $card = $this->carteRepository->getCardById(1);
+        $payload = json_encode($card, JSON_THROW_ON_ERROR | JSON_PRETTY_PRINT);
+        $response->getBody()->write($payload);
+        return $response->withHeader('Content-Type', 'application/json');
+    }
+
 }
