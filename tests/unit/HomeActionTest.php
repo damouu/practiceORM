@@ -17,7 +17,7 @@ class HomeActionTest extends TestCase
         $newCarte->password = "test";
         $newCarte->nom_proprietaire = "test";
         $newCarte->mail_proprietaire = "test@mail.fr";
-        $newCarte->cumul = "2019";
+        $newCarte->cumul = "2020";
 
         $pp = new carte();
         $pp->password = "dede";
