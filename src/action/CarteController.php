@@ -18,6 +18,9 @@ class CarteController
     public function getCardsLimit(Request $request, Response $response): Response
     {
         $queryParams = $request->getQueryParams();
+        if (!array_key_exists("limit", $queryParams)) {
+            $queryParams["limit"] = 1;
+        }
         $cards = $this->carteRepository->getCardsLimit($queryParams["limit"]);
         $cardsResponse = [];
         $cardsCount = 0;
