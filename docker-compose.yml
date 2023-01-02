@@ -6,7 +6,7 @@ networks:
 
 services:
   prism.app:
-    image: damou/php:8-apache-mysql-composer-nano-a2enmod
+    image: damou/php:8-apache-mysql-composer-nano-a2enmod-public
     ports:
       - "8080:80"
       - "10443:443"
