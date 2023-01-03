@@ -1,4 +1,4 @@
-name: automerge
+name: Auto merge ACTION
 on:
   pull_request:
     types:

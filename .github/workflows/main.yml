@@ -1,4 +1,4 @@
-name: main branch
+name: main Action
 
 on:
   workflow_run:

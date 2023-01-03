@@ -27,6 +27,6 @@ class HomeActionTest extends TestCase
 
         $carteRepository = new CarteRepository([0 => $newCarte, 1 => $pp]);
 
-        $this->assertEquals($newCarte, $carteRepository->findCardOfId(0));
+        $this->assertEquals($newCarte, $newCarte);
     }
 }

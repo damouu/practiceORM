@@ -1,4 +1,4 @@
-name: Test
+name: Test ACTION
 
 on:
   push:
@@ -9,25 +9,38 @@ jobs:
   Test:
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v3
+      - name: Validate composer.json and composer.lock
+        run: composer validate
+
+      - name: Cache Composer packages
+        id: composer-cache
+        uses: actions/cache@v3
+        with:
+          path: vendor
+          key: ${{ runner.os }}-php-${{ hashFiles('**/composer.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-php- 
+
       - name: Install dependencies
         run: composer install --prefer-dist --no-progress
 
-        # je vais essayer de modifier ce job, pour creer un issue dans Youtrack aussi.
-      - uses: actions/checkout@v3
-      - name: Create an issue
-        if: ${{ failure() }}
-        uses: JasonEtco/create-an-issue@v2
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          actor: ${{ github.actor }}
-          test: duplicate
-          sha: ${{ steps.AWS.outputs.GITHUB_SHA_SHORT }}
-          error: ${{ steps.mvn_test_error.outputs.msg }}
-          error_short: ${{ steps.mvn_test_error_short.outputs.msg }}
-        with:
-          assignees: ${{ github.actor }}
-          update_existing: true
-          search_existing: open
+      - name: Run test suite
+        run: composer run-script test-php
+
+      #      - uses: actions/checkout@v2
+      #      - name: Create an issue
+      #        if: ${{ failure() }}
+      #        uses: JasonEtco/create-an-issue@v2
+      #        env:
+      #          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      #          actor: ${{ github.actor }}
+      #          test: duplicate
+      #          sha: ${{ steps.AWS.outputs.GITHUB_SHA_SHORT }}
+      #        with:
+      #          assignees: ${{ github.actor }}
+      #          update_existing: true
+      #          search_existing: open
 
       - name: pull-request
         if: ${{ success() }}
