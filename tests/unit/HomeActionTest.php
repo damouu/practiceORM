@@ -14,10 +14,10 @@ class HomeActionTest extends TestCase
     public function testFindCardOfId()
     {
         $newCarte = new carte();
-        $newCarte->password = "test";
-        $newCarte->nom_proprietaire = "test";
+        $newCarte->password = "testCI/CD";
+        $newCarte->nom_proprietaire = "testCI/CD";
         $newCarte->mail_proprietaire = "test@mail.fr";
-        $newCarte->cumul = "2020";
+        $newCarte->cumul = "2022";
 
         $pp = new carte();
         $pp->password = "dede";
@@ -25,7 +25,7 @@ class HomeActionTest extends TestCase
         $pp->mail_proprietaire = "dede@mail.fr";
         $pp->cumul = "12121";
 
-        $carteRepository = new CarteRepository([0 => $newCarte, 1 => $pp]);
+//        $carteRepository = new CarteRepository([0 => $newCarte, 1 => $pp]);
 
         $this->assertEquals($newCarte, $newCarte);
     }
