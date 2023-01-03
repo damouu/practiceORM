@@ -1,4 +1,4 @@
-dockerfile
+Dockerfile
 docker-compose.yml
 .gitignore
 README.txt
