@@ -3,6 +3,5 @@ vendor/
 .idea/
 .idea/workspace.xml
 seed.json
-dockerfile
 .idea/php.xml
 .phpunit.result.cache
