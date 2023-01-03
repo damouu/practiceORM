@@ -28,19 +28,19 @@ jobs:
       - name: Run test suite
         run: composer run-script test-php
 
-      #      - uses: actions/checkout@v2
-      #      - name: Create an issue
-      #        if: ${{ failure() }}
-      #        uses: JasonEtco/create-an-issue@v2
-      #        env:
-      #          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      #          actor: ${{ github.actor }}
-      #          test: duplicate
-      #          sha: ${{ steps.AWS.outputs.GITHUB_SHA_SHORT }}
-      #        with:
-      #          assignees: ${{ github.actor }}
-      #          update_existing: true
-      #          search_existing: open
+      - uses: actions/checkout@v2
+      - name: Create an issue
+        if: ${{ failure() }}
+        uses: JasonEtco/create-an-issue@v2
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          actor: ${{ github.actor }}
+          test: duplicate
+          sha: ${{ steps.AWS.outputs.GITHUB_SHA_SHORT }}
+          with:
+            assignees: ${{ github.actor }}
+            update_existing: true
+            search_existing: open
 
       - name: pull-request
         if: ${{ success() }}
