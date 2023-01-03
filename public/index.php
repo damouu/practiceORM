@@ -12,6 +12,8 @@ $app = DI\Bridge\Slim\Bridge::create();
 
 $app->get('/api/carte', [src\action\CarteController::class, 'getCardsLimit']);
 
+$app->get('/api/carteid', [src\action\CarteController::class, 'getCartId']);
+
 $app->get('/api/test', [src\action\CarteController::class, 'getCartId']);
 
 $app->run();
