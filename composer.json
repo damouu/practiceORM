@@ -18,5 +18,8 @@
       "src\\": "src/",
       "tests\\": "tests/"
     }
+  },
+  "scripts": {
+    "test-php": "vendor/bin/phpunit --colors=always --verbose tests/"
   }
 }
