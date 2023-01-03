@@ -1,0 +1,72 @@
+name: Test
+
+on:
+  push:
+    branches:
+      - test
+
+jobs:
+  Test:
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+      - name: composer tests section setup
+
+      - name: Set environment variables
+        run: echo "GITHUB_SHA_SHORT=$(echo $GITHUB_SHA | cut -c 1-7)" >> $GITHUB_ENV
+
+      - name: environment_variables
+        run: echo "::set-output name=GITHUB_SHA_SHORT::$(echo $GITHUB_SHA_SHORT)"
+        id: AWS
+
+      - name: Validate composer.json and composer.lock
+        run: composer validate --strict
+
+      - name: Cache Composer packages
+        id: composer-cache
+        uses: actions/cache@v3
+        with:
+        path: vendor
+        key: ${{ runner.os }}-php-${{ hashFiles('**/composer.lock') }}
+        restore-keys: |
+          ${{ runner.os }}-php-
+
+      - name: Install dependencies
+        run: composer install --prefer-dist --no-progress
+
+      - name: Run PHPUnit
+        run: composer install --prefer-dist --no-progress
+
+        # je vais essayer de modifier ce job, pour creer un issue dans Youtrack aussi.
+      - uses: actions/checkout@v3
+      - name: Create an issue
+        if: ${{ failure() }}
+        uses: JasonEtco/create-an-issue@v2
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          actor: ${{ github.actor }}
+          test: duplicate
+          sha: ${{ steps.AWS.outputs.GITHUB_SHA_SHORT }}
+          error: ${{ steps.mvn_test_error.outputs.msg }}
+          error_short: ${{ steps.mvn_test_error_short.outputs.msg }}
+        with:
+          assignees: ${{ github.actor }}
+          update_existing: true
+          search_existing: open
+
+      - name: pull-request
+        if: ${{ success() }}
+        uses: repo-sync/pull-request@v2
+        env:
+          GITHUB_TOKEN: ${{ secrets.MyWorkflow2  }}
+        with:
+          GITHUB_TOKEN: ${{ secrets.MyWorkflow2  }}
+          source_branch: "test"
+          destination_branch: "main"
+          pr_title: ${{ github.event.head_commit.message }}
+          pr_body: ${{ github.event.head_commit.message }}
+          pr_label: "Staging,TestsPassed"
+          pr_reviewer: "damouu"
+          pr_assignee: "damouu"
