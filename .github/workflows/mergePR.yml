@@ -10,6 +10,6 @@ jobs:
       - name: automerge
         uses: "pascalgn/automerge-action@v0.14.3"
         env:
-          GITHUB_TOKEN: ${{ secrets.MyWorkflow  }}
+          GITHUB_TOKEN: ${{ secrets.MyWorkflow2  }}
           MERGE_LABELS: "Staging,automerge"
           MERGE_REMOVE_LABELS: "Staging,automerge,TestsPassed"
