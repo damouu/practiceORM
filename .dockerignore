@@ -1,4 +1,4 @@
-Dockerfile
+dockerfile
 docker-compose.yml
 .gitignore
 README.txt
@@ -6,3 +6,5 @@ README.txt
 .git
 .dockerignore
 .github
+tests
+config/DBScript.sql

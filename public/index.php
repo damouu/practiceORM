@@ -14,6 +14,6 @@ $app->get('/api/carte', [src\action\CarteController::class, 'getCardsLimit']);
 
 $app->get('/api/carteid', [src\action\CarteController::class, 'getCartId']);
 
- $app->get('/', [src\action\CarteController::class, 'getCartId']);
+$app->get('/', [src\action\CarteController::class, 'test']);
 
 $app->run();
