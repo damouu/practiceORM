@@ -1,4 +1,4 @@
-name: Test
+name: Test ACTION
 
 on:
   push:
@@ -25,7 +25,9 @@ jobs:
       - name: Install dependencies
         run: composer install --prefer-dist --no-progress
 
-        # je vais essayer de modifier ce job, pour creer un issue dans Youtrack aussi.
+      - name: Run test suite
+        run: composer run-script test
+
       - uses: actions/checkout@v2
       - name: Create an issue
         if: ${{ failure() }}
