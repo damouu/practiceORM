@@ -21,6 +21,17 @@ jobs:
           yt-column-target: "Done"
           yt-label-fields: "Stage"
 
+      - name: tags the ticket
+        uses: bloobirds-it/action-youtrack-sync@v1.0.0
+        with:
+          github-token: ${{ secrets.MyWorkflow2 }}
+          yt-url: ${{ secrets.YOUTRACK_URL }}
+          yt-token: ${{ secrets.YOUTRACK_TOKEN }}
+          yt-project-id: "TD2ORM"
+          yt-column-triggers: "Done"
+          yt-column-target: "Done"
+          yt-label-fields: "Stage"
+
       - name: removes labels
         uses: actions-ecosystem/action-remove-labels@v1
         with:
