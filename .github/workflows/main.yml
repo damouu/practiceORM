@@ -2,7 +2,7 @@ name: main Action
 
 on:
   workflow_run:
-    workflows: [ "YouTrack-Closed" ]
+    workflows: [ "YouTrack Close" ]
     types:
       - completed
 
