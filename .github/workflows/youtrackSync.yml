@@ -7,19 +7,6 @@ jobs:
   sync:
     runs-on: ubuntu-latest
     steps:
-
-      - name: first tag
-        uses: bloobirds-it/action-youtrack-sync@v1.0.0
-        with:
-          github-token: ${{ secrets.MyWorkflow2 }}
-          yt-url: ${{ secrets.YOUTRACK_URL }}
-          yt-token: ${{ secrets.YOUTRACK_TOKEN }}
-          yt-project-id: "TD2ORM"
-#          yt-column-triggers: "Test"
-#          yt-column-target: "Test"
-          yt-label-fields: "Stage"
-
-
       - name: move the ticket
         uses: bloobirds-it/action-youtrack-sync@v1.0.0
         with:
