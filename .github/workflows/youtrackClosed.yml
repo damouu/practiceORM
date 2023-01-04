@@ -10,7 +10,8 @@ jobs:
     if: github.event_name == 'pull_request' && github.event.action == 'closed' && github.event.pull_request.merged == true
     runs-on: ubuntu-latest
     steps:
-      - uses: bloobirds-it/action-youtrack-sync@v1.0.0
+      - name: moves the ticket
+        uses: bloobirds-it/action-youtrack-sync@v1.0.0
         with:
           github-token: ${{ secrets.MyWorkflow2 }}
           yt-url: ${{ secrets.YOUTRACK_URL }}
@@ -18,4 +19,13 @@ jobs:
           yt-project-id: "TD2ORM"
           yt-column-triggers: "Staging"
           yt-column-target: "Done"
+
+      - name: tags the ticket
+        uses: bloobirds-it/action-youtrack-sync@v1.0.0
+        with:
+          github-token: ${{ secrets.MyWorkflow2 }}
+          yt-url: ${{ secrets.YOUTRACK_URL }}
+          yt-token: ${{ secrets.YOUTRACK_TOKEN }}
+          yt-project-id: "TD2ORM"
+          yt-column-triggers: "Staging"
           yt-label-fields: "Stage"
