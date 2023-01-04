@@ -52,7 +52,7 @@ jobs:
           source_branch: "test"
           destination_branch: "main"
           pr_title: "TD2ORM-17"
-          pr_body: "je test des commits en dure"
+          pr_body: "TD2ORM-17"
           pr_label: "Staging,TestsPassed"
           pr_assignee: "damouu"
 #          pr_reviewer: "damouu"
