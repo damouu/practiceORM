@@ -51,8 +51,8 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.MyWorkflow2  }}
           source_branch: "test"
           destination_branch: "main"
-          pr_title: "TD2ORM-17"
-          pr_body: "TD2ORM-17"
+          pr_title: ${{ github.event.head_commit.message }}
+          pr_body: ${{ github.event.head_commit.message }}
           pr_label: "Staging,TestsPassed"
           pr_assignee: "damouu"
 #          pr_reviewer: "damouu"
