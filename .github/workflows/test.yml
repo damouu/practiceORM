@@ -52,5 +52,5 @@ jobs:
           source_branch: "test"
           destination_branch: "main"
           pr_title: ${{ github.event.head_commit.message }}
-          pr_body: ${{ github.event.commits.message }}
+          pr_body: ${{ github.event.head_commit.message }} ${{ github.event.commits.message }}
           pr_assignee: "damouu"
