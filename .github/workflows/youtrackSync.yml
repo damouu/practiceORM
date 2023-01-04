@@ -16,6 +16,7 @@ jobs:
           yt-project-id: "TD2ORM"
           yt-column-triggers: "Test"
           yt-column-target: "Staging"
+          yt-label-fields: "Stage"
 
       - name: tags the ticket
         uses: bloobirds-it/action-youtrack-sync@v1.0.0
@@ -24,5 +25,5 @@ jobs:
           yt-url: ${{ secrets.YOUTRACK_URL }}
           yt-token: ${{ secrets.YOUTRACK_TOKEN }}
           yt-project-id: "TD2ORM"
-          yt-column-triggers: "Test"
+          yt-column-triggers: "Staging"
           yt-label-fields: "Stage"
