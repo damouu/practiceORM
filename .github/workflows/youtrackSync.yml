@@ -14,5 +14,5 @@ jobs:
           yt-token: ${{ secrets.YOUTRACK_TOKEN }}
           yt-project-id: "TD2ORM"
           yt-column-triggers: "Test"
-          yt-label-fields: "Stage"
+          yt-label-fields: "Priority"
           yt-column-target: "Staging"
