@@ -11,5 +11,5 @@ jobs:
         uses: "pascalgn/automerge-action@v0.14.3"
         env:
           GITHUB_TOKEN: ${{ secrets.MyWorkflow2  }}
-          MERGE_LABELS: "stage/Staging"
-          MERGE_REMOVE_LABELS: "stage/Staging"
+          MERGE_LABELS: "stage/staging"
+          MERGE_REMOVE_LABELS: "stage/staging"
