@@ -46,7 +46,7 @@ class CarteController
 
     public function test(Response $response): Response
     {
-        $payload = json_encode("this is working fine !", JSON_THROW_ON_ERROR | JSON_PRETTY_PRINT);
+        $payload = json_encode("this is working pretty fine !", JSON_THROW_ON_ERROR | JSON_PRETTY_PRINT);
         $response->getBody()->write($payload);
         return $response->withHeader('Content-Type', 'application/json');
     }
