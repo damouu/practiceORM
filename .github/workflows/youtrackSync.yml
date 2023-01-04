@@ -15,7 +15,6 @@ jobs:
           yt-url: ${{ secrets.YOUTRACK_URL }}
           yt-token: ${{ secrets.YOUTRACK_TOKEN }}
           yt-project-id: "TD2ORM"
-          yt-column-field: "Test"
           yt-column-triggers: "Test"
           yt-label-fields: "Stage"
 
@@ -38,6 +37,5 @@ jobs:
           yt-url: ${{ secrets.YOUTRACK_URL }}
           yt-token: ${{ secrets.YOUTRACK_TOKEN }}
           yt-project-id: "TD2ORM"
-          yt-column-field: "Staging"
           yt-column-triggers: "Staging"
           yt-label-fields: "Stage"
