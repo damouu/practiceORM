@@ -23,4 +23,4 @@ jobs:
 #      - uses: actions-ecosystem/action-add-labels@v1
 #        with:
 #          github_token: ${{ secrets.MyWorkflow2  }}
-#          labels: automerge
+#          labels: automergee
