@@ -18,3 +18,4 @@ jobs:
           yt-project-id: "TD2ORM"
           yt-column-triggers: "Staging"
           yt-column-target: "Done"
+          yt-label-fields: "Stage"
