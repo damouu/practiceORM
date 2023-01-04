@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: moves the ticket
-        uses: bloobirds-it/bloobirds-it/action-youtrack-move@v1.0.0
+        uses: bloobirds-it/action-youtrack-move@v1.0.0
         with:
           github-token: ${{ secrets.MyWorkflow2 }}
           yt-url: ${{ secrets.YOUTRACK_URL }}

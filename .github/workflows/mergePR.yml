@@ -12,7 +12,4 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.MyWorkflow2  }}
           MERGE_LABELS: "stage/staging"
-          MERGE_REMOVE_LABELS: |
-            stage/done
-            stage/staging
-            stage/test
+          MERGE_REMOVE_LABELS: "stage/done, stage/staging, stage/test"
