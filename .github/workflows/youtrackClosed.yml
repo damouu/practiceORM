@@ -31,3 +31,12 @@ jobs:
           yt-column-triggers: "Done"
           yt-column-target: "Done"
           yt-label-fields: "Stage"
+
+      - name: removes labels
+        uses: actions-ecosystem/action-remove-labels@v1
+        with:
+          github_token: ${{ secrets.MyWorkflow2 }}
+          labels: |
+            stage/done
+            stage/staging
+            stage/test
