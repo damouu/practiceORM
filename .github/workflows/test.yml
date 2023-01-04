@@ -1,4 +1,4 @@
-name: Test ACTION
+name: Test
 
 on:
   push:
