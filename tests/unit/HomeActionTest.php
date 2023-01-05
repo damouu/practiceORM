@@ -4,7 +4,6 @@ namespace tests\unit;
 
 use Nekofar\Slim\Test\Traits\AppTestTrait;
 use PHPUnit\Framework\TestCase;
-use src\domain\CarteRepository;
 use src\model\Carte as carte;
 
 class HomeActionTest extends TestCase
@@ -27,6 +26,6 @@ class HomeActionTest extends TestCase
 
 //        $carteRepository = new CarteRepository([0 => $newCarte, 1 => $pp]);
 
-        $this->assertEquals($newCarte, $newCarte);
+        $this->assertEquals($pp, $newCarte);
     }
 }

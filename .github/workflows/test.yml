@@ -42,6 +42,17 @@ jobs:
           update_existing: true
           search_existing: open
 
+      - name: move the ticket
+        uses: bloobirds-it/action-youtrack-move@v1.0.0
+        if: ${{ failure() }}
+        with:
+          github-token: ${{ secrets.MyWorkflow2 }}
+          yt-url: ${{ secrets.YOUTRACK_URL }}
+          yt-token: ${{ secrets.YOUTRACK_TOKEN }}
+          yt-project-id: "TD2ORM"
+          yt-column-triggers: "Test"
+          yt-column-target: "Failed"
+
       - name: pull-request
         if: ${{ success() }}
         uses: repo-sync/pull-request@v2
