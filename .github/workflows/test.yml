@@ -42,9 +42,9 @@ jobs:
           update_existing: true
           search_existing: open
 
-      - name: move the ticket
-        uses: bloobirds-it/action-youtrack-move@v1.0.0
+      - name: move ticket Failed
         if: ${{ failure() }}
+        uses: bloobirds-it/action-youtrack-move@v1.0.0
         with:
           github-token: ${{ secrets.MyWorkflow2 }}
           yt-url: ${{ secrets.YOUTRACK_URL }}
