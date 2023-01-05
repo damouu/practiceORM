@@ -28,6 +28,21 @@ jobs:
       - name: Run test suite
         run: composer run-script test-php
 
+      - name: Set environment variables
+        run: echo "GITHUB_SHA_SHORT=$(echo $GITHUB_SHA | cut -c 1-7)" >> $GITHUB_ENV
+
+      - name: environment_variables
+        run: echo "::set-output name=GITHUB_SHA_SHORT::$(echo $GITHUB_SHA_SHORT)"
+        id: AWS
+
+      - name: phpunit error tests messages
+        run: echo "::set-output name=msg::$(composer run-script test-php | grep 'php:' |  head -4 | tail -1 | cut -d' ' -f2-)"
+        id: phpunit_test_error
+
+      - name: phpunit error tests messages
+        run: echo "::set-output name=msg::$(composer run-script test-php |  grep '1)' |  head -4 | tail -1 | cut -d' ' -f2-)"
+        id: phpunit_test_error_short
+
       - uses: actions/checkout@v2
       - name: Create an issue
         if: ${{ failure() }}
@@ -37,21 +52,12 @@ jobs:
           actor: ${{ github.actor }}
           test: duplicate
           sha: ${{ steps.AWS.outputs.GITHUB_SHA_SHORT }}
+          error: ${{ steps.phpunit_test_error.outputs.msg }}
+          error_short: ${{ steps.phpunit_test_error_short.outputs.msg }}
         with:
           assignees: ${{ github.actor }}
           update_existing: true
           search_existing: open
-
-      - name: move ticket Failed
-        if: ${{ failure() }}
-        uses: bloobirds-it/action-youtrack-move@v1.0.0
-        with:
-          github-token: ${{ secrets.MyWorkflow2 }}
-          yt-url: ${{ secrets.YOUTRACK_URL }}
-          yt-token: ${{ secrets.YOUTRACK_TOKEN }}
-          yt-project-id: "TD2ORM"
-          yt-column-triggers: "Test"
-          yt-column-target: "Failed"
 
       - name: pull-request
         if: ${{ success() }}
