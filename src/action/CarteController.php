@@ -15,6 +15,15 @@ class CarteController
         $this->carteRepository = $carteRepository;
     }
 
+    public function getCartId(Request $request, Response $response, array $args): Response
+    {
+        $card = $this->carteRepository->getCardById(1);
+        $card->setHidden(['password', 'id', 'created_at', 'updated_at']);
+        $payload = json_encode($card, JSON_THROW_ON_ERROR | JSON_PRETTY_PRINT);
+        $response->getBody()->write($payload);
+        return $response->withHeader('Content-Type', 'application/json');
+    }
+
     public function getCardsLimit(Request $request, Response $response): Response
     {
         $queryParams = $request->getQueryParams();
@@ -36,17 +45,10 @@ class CarteController
         return $response->withHeader('Content-Type', 'application/json');
     }
 
-    public function getCartId(Request $request, Response $response): Response
-    {
-        $card = $this->carteRepository->getCardById(1);
-        $payload = json_encode($card, JSON_THROW_ON_ERROR | JSON_PRETTY_PRINT);
-        $response->getBody()->write($payload);
-        return $response->withHeader('Content-Type', 'application/json');
-    }
 
-    public function test(Response $response): Response
+    public function test(Request $request, Response $response, array $args): Response
     {
-        $payload = json_encode("this is working pretty fine !", JSON_THROW_ON_ERROR | JSON_PRETTY_PRINT);
+        $payload = $this->carteRepository->test();
         $response->getBody()->write($payload);
         return $response->withHeader('Content-Type', 'application/json');
     }
