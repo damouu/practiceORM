@@ -45,12 +45,4 @@ class CarteController
         return $response->withHeader('Content-Type', 'application/json');
     }
 
-
-    public function test(Request $request, Response $response, array $args): Response
-    {
-        $payload = $this->carteRepository->test();
-        $response->getBody()->write($payload);
-        return $response->withHeader('Content-Type', 'application/json');
-    }
-
 }
