@@ -17,9 +17,4 @@ class CarteRepository
         return Carte::findOrFail($id);
     }
 
-    public function test(): string
-    {
-        return 'aurore';
-    }
-
 }
