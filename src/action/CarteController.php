@@ -17,7 +17,7 @@ class CarteController
 
     public function getCartId(Request $request, Response $response, array $args): Response
     {
-        $card = $this->carteRepository->getCardById(1);
+        $card = $this->carteRepository->getCardById($args['id']);
         $card->setHidden(['password', 'id', 'created_at', 'updated_at']);
         $payload = json_encode($card, JSON_THROW_ON_ERROR | JSON_PRETTY_PRINT);
         $response->getBody()->write($payload);
