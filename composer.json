@@ -3,7 +3,7 @@
   "description": "this is a personal project for training purposes",
   "license": "Apache-2.0",
   "require": {
-    "illuminate/database": "^v9.44.0",
+    "illuminate/database": "^v9.46.0.0",
     "slim/slim": "^4.11.0",
     "slim/psr7": "^1.6",
     "php-di/slim-bridge": "^3.2.0"
