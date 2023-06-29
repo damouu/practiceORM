@@ -1,0 +1,462 @@
+GET http://localhost:8080/api/item/2/
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-06-29T162714.200.json
+
+###
+
+GET http://localhost:8080/api/item/41/
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-06-29T162705.200.html
+
+###
+
+GET http://localhost:8080/api/item/4/
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-06-29T162658.200.json
+
+###
+
+GET http://localhost:8080/api/item/4/
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-06-29T162218.200.json
+
+###
+
+GET http://localhost:8080/api/item/4/
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-06-29T161628.200.html
+
+###
+
+GET http://localhost:8080/api/item/4/
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-06-29T161554.200.html
+
+###
+
+GET http://localhost:8080/api/item/4/
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-06-29T161009.200.html
+
+###
+
+GET http://localhost:8080/api/item/4/
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-06-29T160608.200.html
+
+###
+
+GET http://localhost:8080/api/item/4/
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-06-29T160552.200.html
+
+###
+
+GET http://localhost:8080/api/item/4/
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-06-29T160524.200.html
+
+###
+
+GET http://localhost:8080/api/item/4/
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-06-29T160511.200.html
+
+###
+
+GET http://localhost:8080/api/item/4/
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-06-29T160419.200.html
+
+###
+
+GET http://localhost:8080/api/item/4/
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-06-29T155923.200.html
+
+###
+
+GET http://localhost:8080/api/item/4/
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-06-29T155848.200.html
+
+###
+
+GET http://localhost:8080/api/item/4/
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-06-29T155750.200.html
+
+###
+
+GET http://localhost:8080/api/item/4/
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-06-29T155338.200.html
+
+###
+
+GET http://localhost:8080/api/item/4/
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-06-29T155308.200.html
+
+###
+
+GET http://localhost:8080/api/item/4/
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-06-29T155244.200.html
+
+###
+
+GET http://localhost:8080/api/item/4/
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-06-29T155157.200.html
+
+###
+
+GET http://localhost:8080/api/command/000b2a0b-d055-4499-9c1b-84441a254a36/
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-06-29T151936.200.json
+
+###
+
+GET http://localhost:8080/api/command/000b2a0b-d055-4499-9c1b-84441a254a36/item
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-06-29T151818.200.html
+
+###
+
+GET http://localhost:8080/api/command/000b2a0b-d055-4499-9c1b-84441a254a36/item
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-06-29T151207.200.html
+
+###
+
+GET http://localhost:8080/api/command/000b2a0b-d055-4499-9c1b-84441a254a36/item
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-06-29T150931.200.json
+
+###
+
+GET http://localhost:8080/api/command/000b2a0b-d055-4499-9c1b-84441a254a36/item
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-06-29T150411.200.json
+
+###
+
+GET http://localhost:8080/api/command/000b2a0b-d055-4499-9c1b-84441a254a36/item
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-06-29T150231.200.html
+
+###
+
+GET http://localhost:8080/api/command/000b2a0b-d055-4499-9c1b-84441a254a36/item
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-06-29T150142.200.html
+
+###
+
+GET http://localhost:8080/api/command/000b2a0b-d055-4499-9c1b-84441a254a36/item
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-06-29T150040.200.html
+
+###
+
+GET http://localhost:8080/api/command/000b2a0b-d055-4499-9c1b-84441a254a36/item
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-06-29T145934.200.html
+
+###
+
+GET http://localhost:8080/api/command/000b2a0b-d055-4499-9c1b-84441a254a36/item
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-06-29T145856.200.html
+
+###
+
+GET http://localhost:8080/api/command/000b2a0b-d055-4499-9c1b-84441a254a36/item
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-06-29T145833.200.html
+
+###
+
+GET http://localhost:8080/api/command/000b2a0b-d055-4499-9c1b-84441a254a36/item
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-06-29T145423.200.html
+
+###
+
+GET http://localhost:8080/api/command/000b2a0b-d055-4499-9c1b-84441a254a36/item
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-06-29T144419.200.html
+
+###
+
+GET http://localhost:8080/api/command/000b2a0b-d055-4499-9c1b-84441a254a36/item
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-06-29T144303.200.html
+
+###
+
+GET http://localhost:8080/api/command/000b2a0b-d055-4499-9c1b-84441a254a36/item
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-06-29T144235.200.html
+
+###
+
+GET http://localhost:8080/api/command/000b2a0b-d055-4499-9c1b-84441a254a36/item
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-06-29T144111.200.html
+
+###
+
+GET http://localhost:8080/api/command/000b2a0b-d055-4499-9c1b-84441a254a36/item
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-06-29T143935.200.html
+
+###
+
+GET http://localhost:8080/api/command/000b2a0b-d055-4499-9c1b-84441a254a36/command
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-06-29T143914.200.html
+
+###
+
+GET http://localhost:8080/api/carte/1/command
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-06-27T124843.200.html
+
+###
+
+GET http://localhost:8080/api/carte/1/command
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-06-27T124833.200.html
+
+###
+
+GET http://localhost:8080/api/carte/1/command
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+###
+
+GET http://localhost:8080/api/carte/1/command
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-06-27T122014-5.200.html
+
+###
+
+GET http://localhost:8080/api/command/00fa7086-2384-45cb-bddf-5aa89dd51d65
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-06-27T122014.200.json
+
+###
+
+GET http://localhost:8080/api/review
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-06-27T122014-4.200.html
+
+###
+
+DELETE http://localhost:8080/api/review
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-06-27T122014-3.200.html
+
+###
+
+PUT http://localhost:8080/api/review/ed4ccf6b-581b-4bd2-ba88-fa959d07a074
+Content-Type: application/json
+Content-Length: 38
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "comment": "update this message"
+}
+
+<> 2023-06-27T122014-2.200.html
+
+###
+
+GET http://localhost:8080/api/review?size=12&page=1
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-06-27T122014-1.200.html
+
+###
+
+GET http://localhost:8080/api/review/7621b0d6-b642-4c80-99c5-e93ddf763236
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-06-27T122014.200.html
+
+###
+
+POST http://localhost:8080/api/review/
+Content-Type: application/json
+Content-Length: 73
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "comment": "verbatim ",
+  "stars": 5,
+  "dedeTest": "verbatim test"
+}
+
+<> 2023-06-27T122013-2.200.html
+
+###
+
+GET http://localhost:8080/reverse
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-06-27T122013-1.200.html
+
+###
+
+GET http://localhost:8080/healthz
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-06-27T122013.200.html
+
+###
+
