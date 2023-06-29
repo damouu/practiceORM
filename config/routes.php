@@ -10,4 +10,5 @@ return static function (App $app) {
 
     $app->get('/api/carte/{id}/command', [src\action\CarteController::class, 'getCarteCommand']);
 
+    $app->get('/api/item/{id}[/]', [src\action\ItemController::class, 'getItemId']);
 };
