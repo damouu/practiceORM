@@ -4,11 +4,10 @@ namespace src\model;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\HasMany;
-use Illuminate\Database\Eloquent\SoftDeletes;
 
 class Item extends Model
 {
-    use SoftDeletes;
+//    use SoftDeletes; pour checker si il y a une colonne deleted_at dans la table pour softdelete plutot que vraiment delete des donnees dans la bdd
 
     protected $table = 'item';
     protected $primaryKey = 'id';
